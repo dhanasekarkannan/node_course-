@@ -24,6 +24,7 @@ app.use(express.static( __dirname + '/public' ) );
 hbs.registerHelper( 'getCurrentYear' , () => {
   return new Date().getFullYear()
 });
+
 app.get('/',( req, res ) => {
   res.render('index.hbs',{
     pageTitle : 'Welcome',
